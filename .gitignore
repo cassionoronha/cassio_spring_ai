@@ -1,0 +1,23 @@
+# Maven target directory
+target/
+
+# Compiled class files
+*.class
+
+# Logs
+*.log
+
+# Maven dependency directories
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/
+
+# IDE files
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.vscode/
+
+# OS files
+.DS_Store

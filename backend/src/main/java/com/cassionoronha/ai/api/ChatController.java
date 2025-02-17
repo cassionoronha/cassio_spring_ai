@@ -9,8 +9,10 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import com.cassionoronha.ai.service.ChatService;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 @Tag(name = "Chat API", description = "Operations related to the Chat functionality")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/chat")
 public class ChatController {

@@ -1,15 +1,18 @@
 package com.cassionoronha.ai.service;
 
 import org.springframework.stereotype.Service;
+
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.client.ChatClient.CallResponseSpec;
+import org.springframework.ai.vectorstore.VectorStore;
 
 @Service
 public class ChatService {
 
     private final ChatClient chatClient;
 
-    public ChatService(ChatClient.Builder chatClientBuilder) {
+    public ChatService(ChatClient.Builder chatClientBuilder, 
+                        VectorStore vectorStore) {
         this.chatClient = chatClientBuilder.build();
     }
 
